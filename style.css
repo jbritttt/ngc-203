@@ -1,0 +1,181 @@
+
+*{margin:0;
+padding:0}
+
+header { 
+  display:flex !important; /* why is not working without important??? */
+  justify-content:space-between;
+  align-items:center;
+  padding-left:3rem;
+  width: 100%;
+    
+  height: 75px;
+  background-color: black;
+  position:sticky;
+  top:0;
+  font-family: "Fredericka the Great";
+  z-index:10;
+ 
+  
+}
+
+.modal{
+  position:absolute;
+  top:80px;
+  left:0;
+    
+}
+
+.items a {
+  padding:1rem;
+  color:white;
+  text-decoration:none;
+}
+
+
+
+.modal ul {list-style-type:none}
+
+.modal ul li {
+  padding-top:1rem;
+  padding-bottom:1rem;
+  text-decoration:none;
+}  
+
+    
+.hero {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 5% 0 0 3rem ;
+}
+
+.hero h1 {
+  font-family: "Fredericka the Great";
+}
+
+.hero h3 {
+  font-family: 'Libre Baskerville';
+}
+
+.sm-visible {
+  color: white;
+}
+
+.sm-hidden {
+    display: none;
+  }
+
+
+.hamburger .bar-1 {
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+  margin: 8px;
+  transition: 0.5s ease;
+}
+
+.hamburger{
+    margin-right:3rem; 
+  cursor:pointer;
+}
+
+.hero {
+  background-image: url("https://cdn.shopify.com/s/files/1/0868/3310/products/Spiral_20Galaxy_20NGC_203370_bf56a51b-7cec-40fa-9ffa-4a17356e4ad4.jpg?v=1489583625");
+  min-height: 400px;
+  background-position: center;
+}
+
+
+
+
+.about {
+  margin: 20px;
+}
+
+.about h1 {
+  margin: auto;
+  width: 50%;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom:20px;
+}
+
+.about p {
+  margin: auto;
+  width: 70%;
+  text-align: justify;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel {
+  width: calc(100px + 40%);
+  padding: 10px;
+  
+}
+
+.gal-img {
+  width: 100%;
+}
+
+
+
+.container{width:80%;
+margin:auto;
+margin-top:50px;}
+
+
+/* Style inputs with type="text", select elements and textareas */
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+/* Style the submit button with a specific background color etc */
+input[type="submit"] {
+  background-color: #04aa6d;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+.input-label {
+  font-family: "Fredericka the great";
+}
+footer {
+    
+  margin-top:5rem;
+  display:flex;
+
+  align-items:center;
+  background-color:black;
+  height:80px;
+  line-height:80px;
+  text-align:center;
+  color:white
+}
+
+
+
+
