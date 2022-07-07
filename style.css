@@ -1,53 +1,50 @@
-
-*{margin:0;
-padding:0}
-
-header { 
-  display:flex !important; /* why is not working without important??? */
-  justify-content:space-between;
-  align-items:center;
-  padding-left:3rem;
-  width: 100%;
-    
-  height: 75px;
-  background-color: black;
-  position:sticky;
-  top:0;
-  font-family: "Fredericka the Great";
-  z-index:10;
- 
-  
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.modal{
-  position:absolute;
-  top:80px;
-  left:0;
-    
+header {
+  display: flex !important; /* why is not working without important??? */
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 3rem;
+  width: 100%;
+
+  height: 75px;
+  background-color: black;
+  position: sticky;
+  top: 0;
+  font-family: "Fredericka the Great";
+  z-index: 10;
+}
+
+.modal {
+  position: absolute;
+  top: 80px;
+  left: 0;
 }
 
 .items a {
-  padding:1rem;
-  color:white;
-  text-decoration:none;
+  padding: 1rem;
+  color: white;
+  text-decoration: none;
 }
 
-
-
-.modal ul {list-style-type:none}
+.modal ul {
+  list-style-type: none;
+}
 
 .modal ul li {
-  padding-top:1rem;
-  padding-bottom:1rem;
-  text-decoration:none;
-}  
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  text-decoration: none;
+}
 
-    
 .hero {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding: 5% 0 0 3rem ;
+  padding: 5% 0 0 3rem;
 }
 
 .hero h1 {
@@ -55,7 +52,7 @@ header {
 }
 
 .hero h3 {
-  font-family: 'Libre Baskerville';
+  font-family: "Libre Baskerville";
 }
 
 .sm-visible {
@@ -63,9 +60,8 @@ header {
 }
 
 .sm-hidden {
-    display: none;
-  }
-
+  display: none;
+}
 
 .hamburger .bar-1 {
   display: block;
@@ -76,9 +72,9 @@ header {
   transition: 0.5s ease;
 }
 
-.hamburger{
-    margin-right:3rem; 
-  cursor:pointer;
+.hamburger {
+  margin-right: 3rem;
+  cursor: pointer;
 }
 
 .hero {
@@ -86,9 +82,6 @@ header {
   min-height: 400px;
   background-position: center;
 }
-
-
-
 
 .about {
   margin: 20px;
@@ -99,7 +92,7 @@ header {
   width: 50%;
   font-size: 20px;
   text-align: center;
-  margin-bottom:20px;
+  margin-bottom: 20px;
 }
 
 .about p {
@@ -118,19 +111,17 @@ header {
 .carousel {
   width: calc(100px + 40%);
   padding: 10px;
-  
 }
 
 .gal-img {
   width: 100%;
 }
 
-
-
-.container{width:80%;
-margin:auto;
-margin-top:50px;}
-
+.container {
+  width: 80%;
+  margin: auto;
+  margin-top: 50px;
+}
 
 /* Style inputs with type="text", select elements and textareas */
 input[type="text"],
@@ -164,18 +155,13 @@ input[type="submit"]:hover {
   font-family: "Fredericka the great";
 }
 footer {
-    
-  margin-top:5rem;
-  display:flex;
+  margin-top: 5rem;
+  display: flex;
 
-  align-items:center;
-  background-color:black;
-  height:80px;
-  line-height:80px;
-  text-align:center;
-  color:white
+  align-items: center;
+  background-color: black;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  color: white;
 }
-
-
-
-
