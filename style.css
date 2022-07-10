@@ -4,164 +4,185 @@
 }
 
 header {
-  display: flex !important; /* why is not working without important??? */
+  display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-left: 3rem;
-  width: 100%;
-
-  height: 75px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  height: 4.5rem;
   background-color: black;
   position: sticky;
   top: 0;
-  font-family: "Fredericka the Great";
   z-index: 10;
+}
+
+header h1 {
+  color: white;
+  cursor: pointer;
+}
+
+.hamburger {
+  cursor: pointer;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.hamburger .bar-1 {
+  display: block;
+  width: 1.9rem;
+  height: 0.2rem;
+  background-color: #fff;
+  margin: 0.5rem;
 }
 
 .modal {
   position: absolute;
-  top: 80px;
-  left: 0;
-}
-
-.items a {
-  padding: 1rem;
-  color: white;
-  text-decoration: none;
+  top: 4.5rem;
+  right: 0;
+  background-image: linear-gradient(to bottom, black, #3f333a);
+  width: 10rem;
+  text-align: center;
+  border-bottom-left-radius: 1rem;
+  display: none;
 }
 
 .modal ul {
   list-style-type: none;
 }
 
-.modal ul li {
+.modal ul li,
+a {
   padding-top: 1rem;
   padding-bottom: 1rem;
   text-decoration: none;
-}
-
-.hero {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  padding: 5% 0 0 3rem;
-}
-
-.hero h1 {
-  font-family: "Fredericka the Great";
-}
-
-.hero h3 {
-  font-family: "Libre Baskerville";
-}
-
-.sm-visible {
   color: white;
 }
 
-.sm-hidden {
-  display: none;
-}
-
-.hamburger .bar-1 {
+.hamburger:hover + .modal {
   display: block;
-  width: 30px;
-  height: 3px;
-  background-color: #fff;
-  margin: 8px;
-  transition: 0.5s ease;
 }
-
-.hamburger {
-  margin-right: 3rem;
-  cursor: pointer;
+.modal:hover {
+  display: block;
 }
 
 .hero {
   background-image: url("https://cdn.shopify.com/s/files/1/0868/3310/products/Spiral_20Galaxy_20NGC_203370_bf56a51b-7cec-40fa-9ffa-4a17356e4ad4.jpg?v=1489583625");
   min-height: 400px;
   background-position: center;
+  display: flex;
+  align-items: center;
+}
+
+.hero .hero-items h2,
+h3 {
+  padding: 1rem;
+  margin-left: 2rem;
 }
 
 .about {
-  margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
-.about h1 {
+.about-wrappers {
+  margin: 1rem;
+}
+
+.about h2 {
   margin: auto;
-  width: 50%;
-  font-size: 20px;
+
+  font-size: 1.3rem;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 0.5rem;
 }
 
 .about p {
   margin: auto;
   width: 70%;
   text-align: justify;
+  line-height: 1.3rem;
 }
 
 .gallery {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.carousel {
-  width: calc(100px + 40%);
-  padding: 10px;
-}
-
-.gal-img {
-  width: 100%;
-}
-
-.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
   width: 80%;
   margin: auto;
-  margin-top: 50px;
+  gap: 5rem;
+  text-align: center;
 }
 
-/* Style inputs with type="text", select elements and textareas */
-input[type="text"],
-select,
-textarea {
+.gallery img {
   width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
+  height: 100%;
 }
 
-/* Style the submit button with a specific background color etc */
-input[type="submit"] {
-  background-color: #04aa6d;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-/* When moving the mouse over the submit button, add a darker green color */
-input[type="submit"]:hover {
-  background-color: #45a049;
-}
-.input-label {
-  font-family: "Fredericka the great";
-}
 footer {
   margin-top: 5rem;
   display: flex;
-
   align-items: center;
+  justify-content: center;
   background-color: black;
-  height: 80px;
-  line-height: 80px;
-  text-align: center;
+  height: 4.5rem;
   color: white;
+}
+
+@media screen and (min-width: 760px) {
+  .gallery {
+    grid-template-columns: 1fr 1fr;
+    width: 90%;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .modal {
+    position: inherit;
+    top: inherit;
+    width: auto;
+    display: flex;
+    align-items: center;
+    background-image:none
+  }
+
+  .modal ul {
+   
+    display: flex;
+    align-items: center;
+  }
+
+  .modal a {
+    padding: 0;
+    padding: 1rem;
+    color: white;
+    text-decoration: none;
+  }
+
+  .modal a:hover {
+    color: #e5ae94;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .gallery {
+    width: 80%;
+  }
+
+  .about {
+    flex-wrap: nowrap;
+    margin: 3rem;
+  }
+
+  .gallery {
+    border-top: 1px solid rgb(65, 60, 60);
+    padding: 5rem;
+  }
+
+  .about h2 {
+    font-size: 1.4rem;
+  }
 }
